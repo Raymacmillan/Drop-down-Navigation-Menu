@@ -1,0 +1,10 @@
+nav .nav-links {
+  display: none;
+}
+nav .mobile-menu {
+  display: block;
+}
+
+body {
+  background-color: red;
+}/*# sourceMappingURL=mobile-des.css.map */

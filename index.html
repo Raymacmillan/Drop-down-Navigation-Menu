@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <title>Dropdown navigation</title>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+      <div class="nav-links-container">
+      <div class="nav-links">
+        <ul class="links">
+          <li><a href="#">Features <img class="this1" src="./images/icon-arrow-down.svg" alt="arrow-down"></a>
+            <ul class="sub-links p-right hide-sub-links">
+              <li><a href="#"><img src="./images/icon-todo.svg" alt="todo">Todo List</a></li>
+              <li><a href="#"><img src="./images/icon-calendar.svg" alt="calender">Calender</a></li>
+              <li><a href="#"><img src="./images/icon-reminders.svg" alt="reminders">Reminders</a></li>
+              <li><a href="#"><img src="./images/icon-planning.svg" alt="planning">Planning</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Company <img src="./images/icon-arrow-down.svg" alt="arrow-down"></a>
+            <ul class="sub-links p-left hide-sub-links">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="account-links">
+          <li><a href="#">Login</a></li>
+          <li><a href="#" class="register-btn">Register</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="mobile-menu"><img src="./images/icon-menu.svg" alt="menu"></div>    
+    </nav>
+    <div class="cta-container">
+      <div class="cta-content">
+        <h1>Make <br/> remote work</h1>
+        <p>
+          Get your team in sync,no matter your location.
+          Streamline processes,create team rituals,and watch
+          productivity soar.
+        </p>
+        <button class="cta-btn">Learn more</button>
+
+        <div class="bottom-img">
+          <img src="./images/client-databiz.svg" alt="client-databiz">
+          <img src="./images/client-audiophile.svg" alt="client-audiophile">
+          <img src="./images/client-meet.svg" alt="client-meet">
+          <img src="./images/client-maker.svg" alt="client-marker">
+        </div>
+      </div>
+      <picture>
+        <source media="(min-width:768px )" srcset="./images/image-hero-desktop.png">
+        <img src="./images/image-hero-mobile.png" alt="img-hero-desktop">
+      </picture>
+    </div>
+  </header>
+  <script type="module" src="./main/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+@import "functions";
+@import "navigation";
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Epilogue",sans-serif;
+}
+
+.cta-container {
+    padding: 0 10%;
+
+    width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    .cta-content {
+        margin-top: 120px;
+        padding-right: 200px;
+        flex: 1;
+
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            margin: 50px 0 50px;
+            font-size: 18px;
+
+            color:  hsl(0, 0%, 41%);
+        }
+
+        .cta-btn {
+            color: black;
+            background-color: transparent;
+
+            border-radius: 10px;
+            border: 2px solid hsl(0, 0%, 8%);
+            outline: none;
+
+            cursor: pointer;
+
+            padding: 10px 20px;
+        }
+
+        .bottom-img {
+            display: flex;
+            align-items: flex-start;
+
+            margin-top: 80px;
+            margin-left: 0;
+
+            width: 100%;
+
+            gap: 15px;
+
+        }
+    }
+    
+    picture {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+
+        img {
+            max-height: 80vh;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    @import "mobile-des";
+}

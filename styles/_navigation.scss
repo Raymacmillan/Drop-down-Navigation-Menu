@@ -1,0 +1,132 @@
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }to {
+        transform: scale(1);
+    }
+}
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }to {
+        transform: scale(0);
+    }
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 20px;
+    
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        flex: 1;
+    }
+
+    .nav-links-container {
+        flex: 10;  
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            -webkit-tap-highlight-color: transparent;
+
+
+            li {
+                list-style: none;
+                position: relative;
+                cursor: pointer;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    
+                    gap: 5px;
+                    text-decoration: none;
+                    color:  hsl(0, 0%, 41%);
+                    font-size: 0.9rem;
+
+                    transition: all ease-in-out 250ms;
+
+                    cursor: pointer;
+
+                
+                }
+
+                a:hover {
+                    color: black;
+                }
+
+                img {
+                    pointer-events: none;
+                }
+
+                .register-btn {
+                    border: 2px solid hsl(0, 0%, 41%);
+                    border-radius: 13px;
+                    padding: 8px 15px;
+
+                    color:  hsl(0, 0%, 41%);
+                }
+
+                .sub-links {
+
+                    position: absolute;
+                    top: 30px;
+
+                    overflow: hidden;
+
+                    background-color:  hsl(0, 0%, 98%);
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    padding: 25px;
+                    border-radius: 10px;
+
+                    min-width: 120px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+
+                .p-right {
+                    right: 0;
+                }
+                .p-left {
+                    left: 0;
+                }
+
+                .hide-sub-links {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
